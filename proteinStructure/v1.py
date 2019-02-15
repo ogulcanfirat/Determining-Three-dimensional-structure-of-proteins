@@ -23,12 +23,12 @@ for filename in glob.glob(os.path.join('*.pdb')):
     counter = 0
     with open(filename,'r') as f:
         for line in f:
-            print(line)
+            #print(line)
             a = i
             counter = 0
             if(line.__contains__("ATOM") and line.__contains__("CA")):
                x[j].append(["CA"])
-               print(x)
+               #print(x)
                i = i + 1
                #print(x[a][1])
             #x.append(i)
@@ -54,7 +54,7 @@ for filename in glob.glob(os.path.join('*.pdb')):
 
 
                #x[i].append(word)
-               print(word)
+               #print(word)
 
 
 print(x)
